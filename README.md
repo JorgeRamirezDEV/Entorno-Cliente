@@ -1,2 +1,3 @@
 # Entorno-Cliente
- Prácticas de JavaScript 2DAW
+ Prácticas de JavaScript 
+ Jorge Ramírez Molina 2DAW
