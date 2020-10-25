@@ -1,0 +1,18 @@
+document.write("<table cellspacing='2' border='1px solid black'>");
+document.write("<tr>");
+document.write("<td>availHeight</td>");
+document.write("<td>"+ screen.availHeight +"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write("<td>availWidth</td>");
+document.write("<td>"+ screen.availWidth +"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write("<td>colorDepth</td>");
+document.write("<td>"+ screen.colorDepth +"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write("<td>pixelDepth</td>");
+document.write("<td>"+ screen.pixelDepth +"</td>");
+document.write("</tr>");
+document.write("</table>");
