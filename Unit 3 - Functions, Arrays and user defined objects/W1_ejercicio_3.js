@@ -1,4 +1,4 @@
-function lanzamiento(){
+function lanzar(){
     var resultado= parseInt(Math.random()*6+1);
     return resultado
 }
@@ -13,7 +13,7 @@ function lanza6k(){
     let lanza6 = 0;
 
     for(let i = 0; i <= 5999; i++){
-        var tirar = lanzamiento();
+        var tirar = lanzar();
 
         if(tirar == 1){
             lanza1++;

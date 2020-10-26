@@ -1,4 +1,4 @@
-function lanzamiento(){
+function lanzar(){
     var  arrsum = [];
     
     for(let i = 0; i <= 35999; i++){
@@ -9,4 +9,3 @@ function lanzamiento(){
     return arrsum;
 }
 
-//Preguntar duda
