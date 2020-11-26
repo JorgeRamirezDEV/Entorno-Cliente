@@ -2,12 +2,12 @@ body {
     background-color: #ccc;
 }
 
-.Options {
+.options {
     display: flex;
     justify-content: center;
 }
 
-.Option {
+.option {
     background: none;
     border: none;
     outline: none;
@@ -16,6 +16,31 @@ body {
     transition: 100ms;
 }
 
-.Option:hover {
+.option:hover {
     transform: scale(1.2);
+}
+
+.results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.score {
+    margin-left:  .1rem;
+    font-size: .8rem;
+    color: #333;
+}
+
+.score-selection {
+    opacity: .5;
+}
+
+.score-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+
 }

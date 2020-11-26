@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ROCK PAPER SCISSOR</title>
+    <title>ROCK PAPER SCISSORS</title>
     <link rel="stylesheet" href="style.css">
     <script src="game.js" defer></script>
 </head>
 <body>
-    <div class="Options">
-        <button class="Option">✊</button>
-        <button class="Option">🤚</button>
-        <button class="Option">✌</button>
+    <div class="options">
+        <button class="option" data-select="rock">💎</button>
+        <button class="option" data-select="paper">🧻</button>
+        <button class="option" data-select="scissors">✂</button>
     </div>
-    <div class="Results">
-        <div>Player
-            <span class="Score">0</span>
+    <div class="results">
+        <div>
+            Player
+            <span class="score">0</span>
         </div>
-        <div>CPU
-            <span class="Score">0</span>
+        <div data-final-column>
+            CPU
+            <span class="score">0</span>
         </div>
+    
+    <!-- <div class="score-selection winner">💎</div>
+    <div class="score-selection">✂</div> -->
+
     </div>
+
 
 </body>
 </html>
