@@ -1,0 +1,21 @@
+body {
+    background-color: #ccc;
+}
+
+.Options {
+    display: flex;
+    justify-content: center;
+}
+
+.Option {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+
+.Option:hover {
+    transform: scale(1.2);
+}
