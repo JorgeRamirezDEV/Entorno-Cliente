@@ -1,7 +1,7 @@
 const selectButtons = document.querySelectorAll('[data-select]')
 const finalColumn = document.querySelector('[data-final-column]')
-const cpuScoreSpan = document.querySelector('[data-cpu-score')
-const playerScoreSpan = document.querySelector('[data-player-score')
+const cpuScoreSpan = document.querySelector('[data-cpu-score]')
+const playerScoreSpan = document.querySelector('[data-player-score]')
 
 const SELECTS = [
     {
