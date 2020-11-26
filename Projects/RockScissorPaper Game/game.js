@@ -1,5 +1,8 @@
 const selectButtons = document.querySelectorAll('[data-select]')
 const finalColumn = document.querySelector('[data-final-column]')
+const cpuScoreSpan = document.querySelector('[data-cpu-score')
+const playerScoreSpan = document.querySelector('[data-player-score')
+
 const SELECTS = [
     {
         name: 'rock',
@@ -28,13 +31,19 @@ selectButtons.forEach(selectButton => {
 
 function makeSelect(select) {
     const cpuSelect = randomSelect()
-    const youWin = isWinner(select, cpuSelect)
+    const playerWin = isWinner(select, cpuSelect)
     const cpuWin = isWinner (cpuSelect, select)
 
     addSelectResult(cpuSelect, cpuWin)
-    addSelectResult(select, youWin)
+    addSelectResult(select, playerWin)
 
-    
+    if (playerWin) incrementScore (playerScoreSpan)
+    if (cpuWin) incrementScore (cpuScoreSpan)
+
+}
+
+function incrementScore(scoreSpan) {
+    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
 }
 
 function addSelectResult(select, winner) {
