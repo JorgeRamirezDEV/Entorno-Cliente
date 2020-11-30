@@ -37,16 +37,9 @@ function getCookie(cname) {
   }
 
 function cierraSesion(){
-    document.getElementById("saludo").innerHTML="Adios "+nombre1;
+    document.getElementById("saludo").innerHTML="Has cerrado sesión "+nombre1;
     document.cookie = "nombre="+nombre1+"; expires=Thu, 18 Dec 2013 12:00:00 UTC;";
     document.getElementById("cerrarSesion").style.visibility = "hidden";
 }
 document.getElementById("botonIniciar").addEventListener("click", saludo);
 document.getElementById("cerrarSesion").addEventListener("click", cierraSesion);
-
-/*if (nombre1){
-    saludo();
-}else{
-    //console.log("cookie vacia");
-    document.getElementById("cerrarSesion").style.display = "none";
-}*/
