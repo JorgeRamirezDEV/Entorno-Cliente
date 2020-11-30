@@ -62,9 +62,9 @@ class BookList {
         }  
     }
 }
-let libro = new Book("theWitcher", "fantasia", "Pepe", false);
-let libro2 = new Book("theWitcher2", "aventura", "Pepe", false);
-let libro3 = new Book("theWitcher3", "fantasia", "Pepe", false);
+let libro = new Book("HarryPotter", "fantasia", "J.K Rowling", false);
+let libro2 = new Book("HungerGames", "aventura", "Suzanne Collins", false);
+let libro3 = new Book("LordOfTheRings", "fantasia", "Tolkien", false);
 let array = new Array();
 let lista = new BookList(0, 0, null, null, null, array);
 lista.addBook(libro);
