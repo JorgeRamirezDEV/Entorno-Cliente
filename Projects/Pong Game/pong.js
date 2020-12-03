@@ -122,9 +122,9 @@ window.onload = function(){
     
     let svg = document.getElementById("cont");
     let tamanoSVG = svg.getBoundingClientRect();
-    palo = new Palo(0, (tamanoSVG.height/2)-10,  "red", 20, 120,  svg, "izquierda");
+    palo = new Palo(0, (tamanoSVG.height/2)-10,  "black", 20, 120,  svg, "izquierda");
     palo2 = new Palo((tamanoSVG.width-20), (tamanoSVG.height/2-10), "black", 20, 120, svg, "derecha");
-    bola = new Bola(10, 20, 20, 5, 5, "red", svg);
+    bola = new Bola(10, 20, 20, 5, 5, "black", svg);
     document.addEventListener("keydown",function(event){
         if (event.code == "KeyW" || event.code == "KeyS"){
             palo.moverPalo(event, "KeyW", "KeyS", tamanoSVG.height);
