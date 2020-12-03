@@ -1,8 +1,3 @@
-/*class Juego{
-    constructor(div){
-    }
-}*/
-
 
 class Bola{
     constructor(radio, posX, posY, velX, velY, color, svgId){
@@ -43,29 +38,12 @@ class Bola{
 
        if (this.posX >=derecha.x.animVal.value-this.radio && this.posX <=derecha.x.animVal.value+derecha.width.animVal.value && this.posY+this.radio>=derecha.y.animVal.value && this.posY-this.radio<=(derecha.y.animVal.value+derecha.height.animVal.value)){
             this.velX *= -1;
-            //this.velX-=1;
-            /*if(Math.round(Math.random())*3==3){
-                if(this.velY>0){
-                    this.velY+=1;
-                    if(this.velY>4)this.velY=4;
-                }else{
-                    this.velY+=-1;
-                    if(this.velY<-4)this.velY=-4;
-                 }
-            }*/
+            
         }
 
         if (this.posX-this.radio<=izquierda.x.animVal.value+izquierda.width.animVal.value && this.posX >=izquierda.x.animVal.value && this.posY+this.radio>=izquierda.y.animVal.value && this.posY-this.radio<=izquierda.y.animVal.value+izquierda.height.animVal.value){
             this.velX*=-1;
-            //this.velX+=1;
-            /*if(Math.round(Math.random())*3==3){
-                if(this.velY>0){
-                    this.velY+=1;
-                    if(this.velY>4)this.velY=4;
-                }else{
-                    this.velY+=-1;
-                }
-            }*/
+            
         }
     }
 
