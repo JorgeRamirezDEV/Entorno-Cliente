@@ -92,12 +92,12 @@ class Palo{
     moverPalo(e, tecla1, tecla2, alto){
 
         if (e.code == tecla1){
-            this.posY -= 5;
+            this.posY -= 25;
             this.dibuja();
         }
 
         if (e.code == tecla2){
-            this.posY += 5;
+            this.posY += 25;
             this.dibuja();
         }
 
@@ -124,7 +124,7 @@ window.onload = function(){
     let tamanoSVG = svg.getBoundingClientRect();
     palo = new Palo(0, (tamanoSVG.height/2)-10,  "black", 20, 120,  svg, "izquierda");
     palo2 = new Palo((tamanoSVG.width-20), (tamanoSVG.height/2-10), "black", 20, 120, svg, "derecha");
-    bola = new Bola(10, 20, 20, 5, 5, "black", svg);
+    bola = new Bola(10, 20, 20, 3, 3, "black", svg);
     document.addEventListener("keydown",function(event){
         if (event.code == "KeyW" || event.code == "KeyS"){
             palo.moverPalo(event, "KeyW", "KeyS", tamanoSVG.height);
